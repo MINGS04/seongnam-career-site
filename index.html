@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>성남 특성화고 진로탐색 · 학과링크 포함</title>
+<title>성남 특성화고 진로탐색 · 학과 소개와 2027 모집요강</title>
 <style>
 :root {
   --bg:#f7f5f1; --card:#ffffff; --line:#ece7e0; --ink:#2b2724; --muted:#726b65;
@@ -57,6 +57,29 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
   .hero{padding:30px 28px}
 }
 
+
+/* 관심 학과에서 바로 확인하는 입학 정보 */
+.link-btn.admission-link{background:#f5efe3;border:1px solid #e5d7bd;color:#79603b}
+.quick-nav{margin-top:20px}
+.quick-nav .link-btn{font-size:14px;padding:11px 16px}
+.admissions{margin-top:24px;padding:24px 22px;background:#fff;border:1px solid var(--line);border-radius:26px;scroll-margin-top:20px}
+.admissions h2{font-size:22px;line-height:1.4;letter-spacing:-.7px;margin:0 0 8px;word-break:keep-all}
+.admissions-intro{font-size:14px;line-height:1.6;color:var(--muted);margin:0 0 16px;word-break:keep-all}
+.admission-grid{display:grid;grid-template-columns:1fr;gap:10px}
+.admission-school{display:flex;flex-direction:column;gap:6px;padding:16px;border:1px solid #e5d7bd;border-radius:18px;background:#fcf9f2;color:var(--ink);text-decoration:none;word-break:keep-all}
+.admission-school strong{font-size:16px;line-height:1.4}
+.admission-school span{font-size:14px;color:#79603b;line-height:1.4}
+.prep-guide{margin-top:18px;padding:16px;border-radius:18px;background:var(--soft);font-size:14px;line-height:1.65;word-break:keep-all}
+.prep-guide p{margin:0}
+.prep-guide ul{display:flex;flex-wrap:wrap;gap:6px 18px;margin:8px 0;padding-left:20px}
+.prep-guide .help-note{color:#555f57;margin-top:10px}
+.checked-date{font-size:12px;color:var(--muted);margin:14px 0 0}
+.link-btn:focus-visible,.admission-school:focus-visible{outline:3px solid #668676;outline-offset:3px}
+@media(hover:hover){.admission-school:hover{background:#f5efe3}}
+@media(min-width:700px){.admission-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(min-width:1080px){.admission-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:400px){.admissions{padding:20px 16px}.admissions h2{font-size:20px}}
+
 </style>
 </head>
 <body>
@@ -64,6 +87,7 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <section class="hero">
 <div class="badge">2027학년도 · 경기도 성남</div>
 <h1>성남에서는<br/>어떤 걸 배울 수 있을까?</h1>
+<nav class="quick-nav" aria-label="입학 정보 바로가기"><a class="link-btn admission-link" href="#admissions">학교별 모집요강 모아보기 ↓</a></nav>
 </section>
 <section class="grid">
 <details class="card">
@@ -79,27 +103,27 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <div class="school">성보경영고등학교</div>
 <div class="major">외식조리경영과</div>
 <div class="desc">한식·양식·일식·중식, 외식 서비스까지 폭넓게 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3531&amp;mi=18523" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3531&amp;mi=18523" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3559&amp;mi=18613" rel="noopener noreferrer" target="_blank" aria-label="성보경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">성보경영고등학교</div>
 <div class="major">제과제빵과</div>
 <div class="desc">빵, 과자, 디저트 중심으로 제과제빵 기술을 익혀요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3532&amp;mi=18528" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3532&amp;mi=18528" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3559&amp;mi=18613" rel="noopener noreferrer" target="_blank" aria-label="성보경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">분당아람고등학교</div>
 <div class="major">K-FOOD디자인과</div>
 <div class="desc">음식 조리와 푸드 스타일링·디자인을 함께 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=4552&amp;mi=24768" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=4552&amp;mi=24768" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3867&amp;mi=20455" rel="noopener noreferrer" target="_blank" aria-label="분당아람고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">분당아람고등학교</div>
 <div class="major">베이커리경영과</div>
 <div class="desc">제과제빵 기술과 베이커리 운영 기초를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3851&amp;mi=20415" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3851&amp;mi=20415" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3867&amp;mi=20455" rel="noopener noreferrer" target="_blank" aria-label="분당아람고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">분당아람고등학교</div>
 <div class="major">관광외식경영과</div>
 <div class="desc">외식과 서비스, 관광 분야를 함께 경험해요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=4553&amp;mi=24769" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=4553&amp;mi=24769" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3867&amp;mi=20455" rel="noopener noreferrer" target="_blank" aria-label="분당아람고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="tipbox">👀 먹는 걸 좋아하는 것과 직접 반복해서 만드는 것은 다를 수 있어요.</div>
 </div>
 </details>
@@ -116,7 +140,7 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <div class="school">성일정보고등학교</div>
 <div class="major">뷰티스마트케어과</div>
 <div class="desc">네일·헤어·메이크업·피부미용 등 뷰티 분야의 실무를 폭넓게 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3305&amp;mi=22587" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div><div class="link-note">※ 학교 학과소개 페이지는 현재 기존 명칭인 ‘뷰티디자인과’로 안내되고 있어요.</div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3305&amp;mi=22587" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3381&amp;mi=17732" rel="noopener noreferrer" target="_blank" aria-label="성일정보고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div><div class="link-note">※ 학교 학과소개 페이지는 현재 기존 명칭인 ‘뷰티디자인과’로 안내되고 있어요.</div></div>
 <div class="tipbox">👀 2027학년도부터 ‘뷰티스마트케어과’로 모집해요. 네일만이 아니라 뷰티 전반을 함께 배우는 계열이에요.</div>
 </div>
 </details>
@@ -133,22 +157,22 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <div class="school">성보경영고등학교</div>
 <div class="major">비주얼디자인과</div>
 <div class="desc">시각적으로 정보를 표현하고 디자인 결과물을 만드는 분야예요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3502&amp;mi=18408" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3502&amp;mi=18408" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3559&amp;mi=18613" rel="noopener noreferrer" target="_blank" aria-label="성보경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">분당아람고등학교</div>
 <div class="major">커뮤니케이션디자인과</div>
 <div class="desc">이미지와 디자인으로 생각과 정보를 전달하는 방법을 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3859&amp;mi=20428" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3859&amp;mi=20428" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3867&amp;mi=20455" rel="noopener noreferrer" target="_blank" aria-label="분당아람고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">분당경영고등학교</div>
 <div class="major">그래픽디자인과</div>
 <div class="desc">컴퓨터와 디자인 도구를 활용한 그래픽 표현을 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3645&amp;mi=19090" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3645&amp;mi=19090" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3652&amp;mi=19108" rel="noopener noreferrer" target="_blank" aria-label="분당경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">성남테크노과학고등학교</div>
 <div class="major">3D 인테리어디자인과</div>
 <div class="desc">공간을 구상하고 3D로 표현하는 인테리어 디자인 분야예요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sts-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4047&amp;mi=21683" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sts-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4047&amp;mi=21683" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4052&amp;mi=21703" rel="noopener noreferrer" target="_blank" aria-label="성남테크노과학고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="tipbox">👀 자유롭게 그림 그리기와 목적이 있는 디자인 작업은 다를 수 있어요.</div>
 </div>
 </details>
@@ -165,7 +189,7 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <div class="school">성남테크노과학고등학교</div>
 <div class="major">영상콘텐츠과</div>
 <div class="desc">영상과 다양한 콘텐츠를 기획하고 제작하는 방법을 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sts-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4048&amp;mi=21689" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sts-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4048&amp;mi=21689" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4052&amp;mi=21703" rel="noopener noreferrer" target="_blank" aria-label="성남테크노과학고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="tipbox">👀 영상을 보는 것과 직접 기획하고 편집하는 것은 다른 활동이에요.</div>
 </div>
 </details>
@@ -182,32 +206,32 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <div class="school">성일정보고등학교</div>
 <div class="major">AI게임콘텐츠과</div>
 <div class="desc">게임 콘텐츠 관련 기술을 배우는 학과예요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=4670&amp;mi=26194" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=4670&amp;mi=26194" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3381&amp;mi=17732" rel="noopener noreferrer" target="_blank" aria-label="성일정보고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">성일정보고등학교</div>
 <div class="major">소프트웨어개발과</div>
 <div class="desc">프로그램과 소프트웨어를 만드는 방법을 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3314&amp;mi=22588" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3314&amp;mi=22588" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3381&amp;mi=17732" rel="noopener noreferrer" target="_blank" aria-label="성일정보고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">분당아람고등학교</div>
 <div class="major">스마트소프트웨어과</div>
 <div class="desc">소프트웨어를 설계하고 구현하는 기술을 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3856&amp;mi=20424" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3856&amp;mi=20424" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3867&amp;mi=20455" rel="noopener noreferrer" target="_blank" aria-label="분당아람고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">분당경영고등학교</div>
 <div class="major">인공지능개발과</div>
 <div class="desc">AI와 프로그램 개발 관련 기초를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=4772&amp;mi=26975" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=4772&amp;mi=26975" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3652&amp;mi=19108" rel="noopener noreferrer" target="_blank" aria-label="분당경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">양영디지털고등학교</div>
 <div class="major">소프트웨어개발과</div>
 <div class="desc">소프트웨어와 프로그래밍 실무를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://yy-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=3600&amp;mi=18887" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://yy-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=3600&amp;mi=18887" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=4239&amp;mi=19000" rel="noopener noreferrer" target="_blank" aria-label="양영디지털고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">성남테크노과학고등학교</div>
 <div class="major">정보보안과</div>
 <div class="desc">컴퓨터 시스템과 정보보안을 배우는 분야예요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sts-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4051&amp;mi=21697" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sts-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4051&amp;mi=21697" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4052&amp;mi=21703" rel="noopener noreferrer" target="_blank" aria-label="성남테크노과학고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="tipbox">👀 게임을 좋아하는 것과 코딩·제작을 좋아하는 것은 다를 수 있어요.</div>
 </div>
 </details>
@@ -224,7 +248,7 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <div class="school">성보경영고등학교</div>
 <div class="major">펫매니지먼트과</div>
 <div class="desc">반려동물 관리와 관련 산업을 배우는 학과예요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=4628&amp;mi=25626" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=4628&amp;mi=25626" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3559&amp;mi=18613" rel="noopener noreferrer" target="_blank" aria-label="성보경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="tipbox">👀 동물을 좋아하는 것과 돌봄·위생관리를 좋아하는 것은 조금 다를 수 있어요.</div>
 </div>
 </details>
@@ -241,17 +265,17 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <div class="school">성보경영고등학교</div>
 <div class="major">보건간호과</div>
 <div class="desc">보건·간호 분야의 기초와 실무를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3503&amp;mi=18411" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3503&amp;mi=18411" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3559&amp;mi=18613" rel="noopener noreferrer" target="_blank" aria-label="성보경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">양영디지털고등학교</div>
 <div class="major">바이오화학과</div>
 <div class="desc">바이오화학제품 제조, 화학분석, 식품품질관리 등 바이오·화학 실무를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://yy-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=3611&amp;mi=18916" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://yy-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=3611&amp;mi=18916" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=4239&amp;mi=19000" rel="noopener noreferrer" target="_blank" aria-label="양영디지털고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">양영디지털고등학교</div>
 <div class="major">생명정보과</div>
 <div class="desc">바이오화학제품·바이오의약품, 미생물배양, 화학분석 등 생명·바이오 실무를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://yy-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=3613&amp;mi=18925" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://yy-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=3613&amp;mi=18925" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=4239&amp;mi=19000" rel="noopener noreferrer" target="_blank" aria-label="양영디지털고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="tipbox">👀 사람을 돌보거나 실험하는 활동에 흥미가 있는지 생각해보면 좋아요.</div>
 </div>
 </details><details class="card">
@@ -267,7 +291,7 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <div class="school">성일정보고등학교</div>
 <div class="major">부사관과</div>
 <div class="desc">군사영어·전쟁사·군리더십·국가안보 등 군 관련 교과와 부사관 시험·체력 준비를 함께 해요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3306&amp;mi=22593" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3306&amp;mi=22593" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3381&amp;mi=17732" rel="noopener noreferrer" target="_blank" aria-label="성일정보고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="tipbox">👀 규칙적인 생활과 체력 활동이 중요하고, 2027학년도 특별전형에서는 부사관과에 실기전형이 있어요.</div>
 </div>
 </details>
@@ -284,22 +308,22 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <div class="school">성남테크노과학고등학교</div>
 <div class="major">스마트로봇기계과</div>
 <div class="desc">기계와 로봇 관련 기술을 배우는 분야예요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sts-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4043&amp;mi=21669" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sts-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4043&amp;mi=21669" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4052&amp;mi=21703" rel="noopener noreferrer" target="_blank" aria-label="성남테크노과학고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">성남테크노과학고등학교</div>
 <div class="major">스마트전기전자과</div>
 <div class="desc">전기·전자 기기와 관련 기술을 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sts-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4046&amp;mi=21678" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sts-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4046&amp;mi=21678" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4052&amp;mi=21703" rel="noopener noreferrer" target="_blank" aria-label="성남테크노과학고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">양영디지털고등학교</div>
 <div class="major">스마트전자과</div>
 <div class="desc">전자 기술과 장비를 다루는 실무를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://yy-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=3594&amp;mi=18868" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://yy-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=3594&amp;mi=18868" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=4239&amp;mi=19000" rel="noopener noreferrer" target="_blank" aria-label="양영디지털고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">양영디지털고등학교</div>
 <div class="major">AI네트워크과</div>
 <div class="desc">컴퓨터 네트워크와 관련 기술을 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://yy-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=3596&amp;mi=18878" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://yy-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=3596&amp;mi=18878" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=4239&amp;mi=19000" rel="noopener noreferrer" target="_blank" aria-label="양영디지털고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="tipbox">👀 기계를 쓰는 것과 구조·원리를 배우는 것은 다를 수 있어요.</div>
 </div>
 </details>
@@ -316,50 +340,66 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <div class="school">성보경영고등학교</div>
 <div class="major">디지털비즈니스과</div>
 <div class="desc">디지털 환경의 비즈니스와 사무 관련 내용을 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=4667&amp;mi=26174" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=4667&amp;mi=26174" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3559&amp;mi=18613" rel="noopener noreferrer" target="_blank" aria-label="성보경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">성보경영고등학교</div>
 <div class="major">관광레저경영과</div>
 <div class="desc">관광·레저와 서비스 분야를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3533&amp;mi=18531" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://seongbo-h.goesn.kr/seongbo-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3533&amp;mi=18531" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3559&amp;mi=18613" rel="noopener noreferrer" target="_blank" aria-label="성보경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">성일정보고등학교</div>
 <div class="major">글로벌경영과</div>
 <div class="desc">경영과 비즈니스 실무를 배우는 학과예요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=4790&amp;mi=27101" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=4790&amp;mi=27101" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3381&amp;mi=17732" rel="noopener noreferrer" target="_blank" aria-label="성일정보고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">성일정보고등학교</div>
 <div class="major">회계정보과</div>
 <div class="desc">회계와 사무 관련 실무를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3311&amp;mi=22591" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3311&amp;mi=22591" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3381&amp;mi=17732" rel="noopener noreferrer" target="_blank" aria-label="성일정보고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">성일정보고등학교</div>
 <div class="major">창업마케팅과</div>
 <div class="desc">상품·홍보·마케팅과 창업 관련 내용을 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3312&amp;mi=22590" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://sungili-h.goesn.kr/sungili-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3312&amp;mi=22590" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3381&amp;mi=17732" rel="noopener noreferrer" target="_blank" aria-label="성일정보고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">분당경영고등학교</div>
 <div class="major">회계금융과</div>
 <div class="desc">회계·금융 분야의 실무를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3641&amp;mi=19076" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3641&amp;mi=19076" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3652&amp;mi=19108" rel="noopener noreferrer" target="_blank" aria-label="분당경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">분당경영고등학교</div>
 <div class="major">스마트경영과</div>
 <div class="desc">경영과 디지털 사무 실무를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3642&amp;mi=19081" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3642&amp;mi=19081" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3652&amp;mi=19108" rel="noopener noreferrer" target="_blank" aria-label="분당경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">분당경영고등학교</div>
 <div class="major">스마트호텔관광과</div>
 <div class="desc">호텔·관광·서비스 분야를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3646&amp;mi=19095" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/main.do" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3646&amp;mi=19095" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3652&amp;mi=19108" rel="noopener noreferrer" target="_blank" aria-label="분당경영고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="major-item">
 <div class="school">분당아람고등학교</div>
 <div class="major">경영사무과</div>
 <div class="desc">회사에서 필요한 경영·사무 실무를 배워요.</div>
-<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3855&amp;mi=20421" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a></div></div>
+<div class="link-row"><a class="link-btn school-link" href="https://bdar-h.goesn.kr/" rel="noopener noreferrer" target="_blank">학교 홈페이지 ↗</a><a class="link-btn dept-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3855&amp;mi=20421" rel="noopener noreferrer" target="_blank">학과 소개 보기 ↗</a><a class="link-btn admission-link" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3867&amp;mi=20455" rel="noopener noreferrer" target="_blank" aria-label="분당아람고등학교 2027학년도 모집요강 (새 창)">2027 모집요강 ↗</a></div></div>
 <div class="tipbox">👀 사람을 응대하거나 꼼꼼하게 기록하는 일을 괜찮게 느끼는지 살펴봐요.</div>
 </div>
 </details>
+</section>
+<section class="admissions" id="admissions" aria-labelledby="admissions-title">
+<h2 id="admissions-title">학교별 모집요강 한눈에 보기</h2>
+<p class="admissions-intro">관심 있는 학교의 모집요강을 열어 지원 조건과 준비할 내용을 확인해요.</p>
+<div class="admission-grid"><a class="admission-school" href="https://bdar-h.goesn.kr/snfn-h/cm/cntnts/cntntsView.do?cntntsId=3867&amp;mi=20455" rel="noopener noreferrer" target="_blank" aria-label="분당아람고등학교 2027학년도 모집요강 (새 창)"><strong>분당아람고등학교</strong><span>2027 모집요강 보기 ↗</span></a>
+<a class="admission-school" href="https://seongbo-h.goesn.kr/seongbo-h/cm/cntnts/cntntsView.do?cntntsId=3559&amp;mi=18613" rel="noopener noreferrer" target="_blank" aria-label="성보경영고등학교 2027학년도 모집요강 (새 창)"><strong>성보경영고등학교</strong><span>2027 모집요강 보기 ↗</span></a>
+<a class="admission-school" href="https://sungili-h.goesn.kr/sungili-h/cm/cntnts/cntntsView.do?cntntsId=3381&amp;mi=17732" rel="noopener noreferrer" target="_blank" aria-label="성일정보고등학교 2027학년도 모집요강 (새 창)"><strong>성일정보고등학교</strong><span>2027 모집요강 보기 ↗</span></a>
+<a class="admission-school" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3652&amp;mi=19108" rel="noopener noreferrer" target="_blank" aria-label="분당경영고등학교 2027학년도 모집요강 (새 창)"><strong>분당경영고등학교</strong><span>2027 모집요강 보기 ↗</span></a>
+<a class="admission-school" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4052&amp;mi=21703" rel="noopener noreferrer" target="_blank" aria-label="성남테크노과학고등학교 2027학년도 모집요강 (새 창)"><strong>성남테크노과학고등학교</strong><span>2027 모집요강 보기 ↗</span></a>
+<a class="admission-school" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=4239&amp;mi=19000" rel="noopener noreferrer" target="_blank" aria-label="양영디지털고등학교 2027학년도 모집요강 (새 창)"><strong>양영디지털고등학교</strong><span>2027 모집요강 보기 ↗</span></a></div>
+<div class="prep-guide">
+<p><strong>모집요강에서 먼저 확인해요</strong></p>
+<ul><li>지원 자격과 전형 종류</li><li>원서접수 날짜</li><li>제출서류</li><li>면접 등 준비할 내용</li></ul>
+<p class="help-note">내 성적에 맞는 지원 방법은 담임선생님과 함께 확인해요. 궁금한 내용은 상담선생님이나 해당 고등학교 입학 담당자에게도 물어볼 수 있어요.</p>
+</div>
+<p class="checked-date">2027학년도 공식 모집요강 링크 확인 · 2026.10.05.</p>
 </section>
 <div class="footer">자료 기준 · 2027학년도 성남시 소재 특성화고 6개교의 공식 신입생 입학전형요항에 공개된 모집학과를 기준으로 정리했습니다.<br/>분야 구분과 짧은 설명은 진로 탐색을 돕기 위해 재구성한 것이며, 실제 지원 전에는 각 학교의 최신 교육과정·입학 안내를 다시 확인해주세요.</div>
 </div>
