@@ -69,12 +69,15 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 .admission-school{display:flex;flex-direction:column;gap:6px;padding:16px;border:1px solid #e5d7bd;border-radius:18px;background:#fcf9f2;color:var(--ink);text-decoration:none;word-break:keep-all}
 .admission-school strong{font-size:16px;line-height:1.4}
 .admission-school span{font-size:14px;color:#79603b;line-height:1.4}
-.prep-guide{margin-top:18px;padding:16px;border-radius:18px;background:var(--soft);font-size:14px;line-height:1.65;word-break:keep-all}
+.prep-guide{margin-top:18px;padding:18px;border-radius:18px;background:var(--soft);font-size:16px;line-height:1.65;word-break:keep-all}
+.prep-guide h3{margin:0;font-size:18px;line-height:1.5}
 .prep-guide p{margin:0}
-.prep-guide ul{display:flex;flex-wrap:wrap;gap:8px 24px;margin:8px 0;padding:0;list-style:none}
-.prep-guide li{display:flex;align-items:baseline;gap:8px}
-.prep-guide li::before{content:"•";flex:0 0 auto}
-.prep-guide .help-note{color:#555f57;margin-top:10px}
+.prep-guide ul{display:grid;grid-template-columns:1fr;gap:12px 24px;margin:14px 0;padding:0;list-style:none}
+.prep-guide li{display:flex;flex-direction:column;gap:2px;min-width:0}
+.prep-guide li strong{font-size:16px}
+.prep-guide li span{color:#555f57}
+.prep-guide .help-note{color:#555f57;margin-top:14px;font-size:14px}
+@media(min-width:700px){.prep-guide ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .checked-date{font-size:12px;color:var(--muted);margin:14px 0 0}
 .link-btn:focus-visible,.admission-school:focus-visible{outline:3px solid #668676;outline-offset:3px}
 @media(hover:hover){.admission-school:hover{background:#f5efe3}}
@@ -396,10 +399,17 @@ h1{font-size:clamp(24px,4.2vw,34px);line-height:1.18;letter-spacing:-1px;margin:
 <a class="admission-school" href="https://bundangmgt-h.goesn.kr/bundangmgt-h/cm/cntnts/cntntsView.do?cntntsId=3652&amp;mi=19108" rel="noopener noreferrer" target="_blank" aria-label="분당경영고등학교 2027학년도 모집요강 (새 창)"><strong>분당경영고등학교</strong><span>2027 모집요강 보기 ↗</span></a>
 <a class="admission-school" href="https://sts-h.goesn.kr/sts-h/cm/cntnts/cntntsView.do?cntntsId=4052&amp;mi=21703" rel="noopener noreferrer" target="_blank" aria-label="성남테크노과학고등학교 2027학년도 모집요강 (새 창)"><strong>성남테크노과학고등학교</strong><span>2027 모집요강 보기 ↗</span></a>
 <a class="admission-school" href="https://yy-h.goesn.kr/yy-h/cm/cntnts/cntntsView.do?cntntsId=4239&amp;mi=19000" rel="noopener noreferrer" target="_blank" aria-label="양영디지털고등학교 2027학년도 모집요강 (새 창)"><strong>양영디지털고등학교</strong><span>2027 모집요강 보기 ↗</span></a></div>
-<div class="prep-guide">
-<p><strong>모집요강에서 먼저 확인해요</strong></p>
-<ul><li>지원 자격과 전형 종류</li><li>원서접수 날짜</li><li>제출서류</li><li>면접 등 준비할 내용</li></ul>
-<p class="help-note">내 성적에 맞는 지원 방법은 담임선생님과 함께 확인해요. 궁금한 내용은 상담선생님이나 해당 고등학교 입학 담당자에게도 물어볼 수 있어요.</p>
+<div class="prep-guide" aria-labelledby="prep-guide-title">
+<h3 id="prep-guide-title">원서 넣기 전 이것부터 확인해요</h3>
+<ul role="list">
+<li><strong>전형과 지원 자격</strong><span>일반·특별전형 중 무엇으로 지원할지, 추천이 필요한지</span></li>
+<li><strong>성적과 출결</strong><span>내신점수와 출결을 어떻게 반영하는지</span></li>
+<li><strong>서류와 일정</strong><span>제출할 서류, 원서 마감일과 면접 날짜</span></li>
+<li><strong>면접과 자기소개서</strong><span>필요 여부와 작성 방법, 이 학과에 지원하는 이유</span></li>
+<li><strong>학과 지망 순서</strong><span>몇 지망까지 쓸 수 있는지, 2지망은 언제 적용되는지</span></li>
+<li><strong>자격증과 실기</strong><span>자격증이 필수인지 가산점인지, 실기시험이 있는지</span></li>
+</ul>
+<p class="help-note">내신점수와 지원할 전형, 여러 학교에 지원할 수 있는지는 담임선생님과 함께 확인해요. 다른 궁금한 점은 상담선생님이나 해당 고등학교 입학 담당자에게 물어봐요.</p>
 </div>
 <p class="checked-date">2027학년도 모집요강 안내 · 2026년 10월 8일 기준</p>
 </section>
